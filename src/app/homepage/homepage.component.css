@@ -1,0 +1,46 @@
+#homepage_div{
+  background-color: bisque;
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+  height: 700px;
+  width: 100%;
+}
+
+#title_div{
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 50%;
+}
+
+#title{
+  font-size: 80px;
+}
+
+#start_button_div{
+  background-color: indianred;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 50%;
+}
+
+#start_button{
+  width: 200px;
+  height: 200px;
+  font-size: 35px;
+  border-radius: 50%;
+}
+
+#start_button:hover{
+  background-color: black;
+  color: teal;
+  animation: bounce 1s;
+  transition: background-color 0.7s;
+}
