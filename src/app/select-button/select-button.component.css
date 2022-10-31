@@ -1,17 +1,18 @@
 #my_button{
+    margin-left: 3%;
     position: relative;
     overflow: hidden;
     width: 86%;
     height: 86%;
     background-color: white;
-    border: 10px solid rgb(129, 87, 129);
+    border: 10px solid #44076d;
     border-radius: 50%;
 }
 
 #my_button::before{
     content: '';
     position: absolute;
-    background: rgb(129, 87, 129);
+    background: #44076d;
 
     left: -20px;
     width: 20px;
@@ -26,8 +27,8 @@
 
 
 #my_button:hover{
-    border: 20px solid rgb(92, 0, 92);
-    box-shadow: 0px 0px 40px 20px rgb(240, 229, 240);
+    border: 20px solid #884AB2;
+    box-shadow: 0px 0px 20px 10px #cd9feb;
     transition: 500ms;
 }
 

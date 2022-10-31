@@ -1,0 +1,8 @@
+#button_div{
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+}
