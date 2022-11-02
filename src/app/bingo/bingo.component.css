@@ -1,0 +1,14 @@
+#background{
+    background-color: white;
+    height: 12cm;
+    box-shadow: 5px 10px;
+    border-radius: 1cm;
+    margin: 1cm;
+    padding: 0.5cm;
+    align-items: center;
+    align-content: center;
+}
+
+#bingo_div{
+    color: aqua;
+}
