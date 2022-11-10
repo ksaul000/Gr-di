@@ -7,6 +7,7 @@ import { SelectButtonComponent } from './select-button/select-button.component';
 import { BingoComponent } from './bingo/bingo.component';
 import { AriciComponent } from './arici/arici.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { StartButtonComponent } from './start-button/start-button.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HomepageComponent } from './homepage/homepage.component';
     HomepageComponent,
     TryComponent,
     SelectButtonComponent,
-    BingoComponent
+    BingoComponent,
+    StartButtonComponent
   ],
   imports: [
     BrowserModule
