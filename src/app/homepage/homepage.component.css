@@ -1,47 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
 #homepage_div{
-  background-color: bisque;
-  padding: 0px;
-  border: 0px;
-  margin: 0px;
-  height: 700px;
-  width: 100%;
+  background: url("../../assets/fetita.png") no-repeat center center/cover;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#right_side{
+  display: flex;
+  flex-direction: column;
 }
 
 #title_div{
-  background-color: aquamarine;
+  background: url("../../assets/blue2") no-repeat center center/cover;
   display: flex;
   justify-content: center;
-  align-content: center;
   flex-direction: column;
-  align-items: center;
-  height: 50%;
+  align-items: flex-start;
+  height: 25vh;
+  width: 800px;
 }
 
 #title{
+  margin-left: 10%;
   font-size: 100px;
-  font-style: oblique;
+  font-weight: bold;
+  font-family: 'Satisfy',cursive;
+  color: #300842;
 }
 
 #start_button_div{
-  background-color: indianred;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
   align-items: center;
-  height: 50%;
+  height: 75vh;
+  flex-basis: 100%;
 }
 
-#start_button{
-  width: 200px;
-  height: 200px;
-  font-size: 35px;
-  border-radius: 50%;
+#start_button_div div {
+  flex: 1;
+}
+#start_button_div button {
+  background-color: transparent;
+  border: none;
+  flex: 2;
 }
 
-#start_button:hover{
-  background-color: black;
-  color: teal;
-  animation: bounce 1s;
-  transition: background-color 0.7s;
-}
