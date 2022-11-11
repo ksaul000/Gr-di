@@ -19,13 +19,16 @@
 }
 
 #select_buttons_div{
-    background-color:rgb(255, 0, 191);
+    background-image:url("../../assets/rafturi.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     width: 50%;
     height: 100%;
     padding: 0;
     border: 0;
     margin: 0;
     float: right;
+    position: relative;
 }
 
 #animation_div{
@@ -97,5 +100,136 @@
 #rafturi{
     height: 100%;
     width: 100%;
-    z-index: 0;
+    z-index: -1;
+}
+
+#refturi_img_div{
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#deasupra_rafturilor_div{
+    width: 100%;
+    height: 6%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    z-index: 80;
+}
+
+#raft1_div{
+    width: 100%;
+    height: 24%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    z-index: 80;
+}
+
+#raft2_div{
+    width: 100%;
+    height: 24%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    z-index: 80;
+}
+
+#raft3_div{
+    width: 100%;
+    height: 25%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    z-index: 80;
+}
+
+#dedesupt_raft_div{
+    width: 100%;
+    height: 21%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    z-index: 80;
+}
+
+#button1{
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+#div_button1{
+    float: left;
+    width: 25%;
+    height: 100%;
+    padding-right: 10%;
+    padding-left: 3%;
+}
+
+#div_button2{
+    float: left;
+    width: 25%;
+    height: 100%;
+    padding-right: 10%;
+}
+
+#div_button3{
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+
+#div_button4{
+    float: left;
+    width: 25%;
+    height: 100%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-left: 3%;
+}
+
+#div_button5{
+    float: left;
+    width: 25%;
+    height: 100%;
+    padding-right: 10%;
+    padding-top: 2%;
+}
+
+#div_button6{
+    float: left;
+    width: 25%;
+    height: 100%;
+    padding-top: 2%;
+}
+
+#div_button7{
+    float: left;
+    width: 25%;
+    height: 100%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-left: 3%;
+}
+
+#div_button8{
+    float: left;
+    width: 25%;
+    height: 100%;
+    padding-right: 10%;
+    padding-top: 2%;
+}
+
+#div_button9{
+    float: left;
+    width: 25%;
+    height: 100%;
+    padding-top: 2%;
+}
+
+#sampleimg{
+    width: 100%;
+    height: 100%;
 }
