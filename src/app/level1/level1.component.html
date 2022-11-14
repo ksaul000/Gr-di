@@ -1,7 +1,7 @@
 <div id="level_div">
     <div id="animation_sevtion_div">
         <div id="animation_div">
-            <img src="../../assets/curious_girl.jpg" alt="" id="sampleimg">
+            <img src={{emote_image}} alt="" id="sampleimg">
         </div>
         <div id="raspunsuri_titlu_div">
             <p id="raspunsuri_titlu">Răspunsuri:</p>
@@ -27,29 +27,29 @@
                 <app-select-button *ngIf="correct_answer_button1_visible" image_source="../../assets/apple.jpg" audio_source="../../assets/mar.wav" class="button1" (click)="clickOnCorrectButton1()"></app-select-button>
             </div>
             <div id="div_button2">
-                <app-select-button image_source="../../assets/apple.jpg" class="button1"></app-select-button>
+                <app-select-button image_source="../../assets/apple.jpg" class="button1" (click)="clickOnWrongButton()"></app-select-button>
             </div>
             <div id="div_button3">
-                <app-select-button image_source="../../assets/apple.jpg" class="button1"></app-select-button>
+                <app-select-button image_source="../../assets/apple.jpg" class="button1" (click)="clickOnWrongButton()"></app-select-button>
             </div>
         </div>
         <div id="raft2_div">
             <div id="div_button4">
-                <app-select-button image_source="../../assets/apple.jpg" class="button1"></app-select-button>
+                <app-select-button image_source="../../assets/apple.jpg" class="button1" (click)="clickOnWrongButton()"></app-select-button>
             </div>
             <div id="div_button5">
                 <app-select-button  *ngIf="correct_answer_button2_visible" image_source="../../assets/apple.jpg" class="button1" (click)="clickOnCorrectButton2()"></app-select-button>
             </div>
             <div id="div_button6">
-                <app-select-button image_source="../../assets/apple.jpg" class="button1"></app-select-button>
+                <app-select-button image_source="../../assets/apple.jpg" class="button1" (click)="clickOnWrongButton()"></app-select-button>
             </div>
         </div>
         <div id="raft3_div">
             <div id="div_button7">
-                <app-select-button image_source="../../assets/apple.jpg" class="button1"></app-select-button>
+                <app-select-button image_source="../../assets/apple.jpg" class="button1" (click)="clickOnWrongButton()"></app-select-button>
             </div>
             <div id="div_button8">
-                <app-select-button image_source="../../assets/apple.jpg" class="button1"></app-select-button>
+                <app-select-button image_source="../../assets/apple.jpg" class="button1" (click)="clickOnWrongButton()"></app-select-button>
             </div>
             <div id="div_button9">
                 <app-select-button  *ngIf="correct_answer_button3_visible" image_source="../../assets/apple.jpg" class="button1" (click)="clickOnCorrectButton3()"></app-select-button>

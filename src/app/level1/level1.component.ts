@@ -12,6 +12,7 @@ export class Level1Component implements OnInit {
   correct_answer_button1_visible: boolean = true;
   correct_answer_button2_visible: boolean = true;
   correct_answer_button3_visible: boolean = true;
+  emote_image: string = "../../assets/curious_girl.jpg";
   constructor() { }
 
   ngOnInit(): void {
@@ -21,6 +22,7 @@ export class Level1Component implements OnInit {
     if(this.correct_answer_button1_visible){
       this.correct_answer_button1_visible=false;
       this.answer1_visible=true;
+      this.emote_image = "../../assets/happy_girl.jpg"
     }
   }
 
@@ -28,6 +30,7 @@ export class Level1Component implements OnInit {
     if(this.correct_answer_button2_visible){
       this.correct_answer_button2_visible=false;
       this.answer2_visible=true;
+      this.emote_image = "../../assets/happy_girl.jpg"
     }
   }
 
@@ -35,7 +38,12 @@ export class Level1Component implements OnInit {
     if(this.correct_answer_button3_visible){
       this.correct_answer_button3_visible=false;
       this.answer3_visible=true;
+      this.emote_image = "../../assets/happy_girl.jpg"
     }
+  }
+
+  clickOnWrongButton(): void{
+      this.emote_image = "../../assets/upset_girl.jpg"
   }
 
 }
