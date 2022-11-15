@@ -16,6 +16,18 @@ export class Level1Component implements OnInit {
   audio = new Audio;
   happy_wav_path: string = "../../assets/yay_sound_effect.wav";
   no_sound_effect: string = "../../assets/no_sound_effect.wav";
+  //imagini butoane
+  bicicleta_img_path: string = "../../assets/saul_level/bicicleta.jpg"
+  casca_cotiere_genuchere_img_path: string = "../../assets/saul_level/casca_cotiere_genunchere.jpg"
+  ghete_de_iarna_img_path: string = "../../assets/saul_level/ghete_de_iarna.jpg"
+  manusi_box_img_path: string = "../../assets/saul_level/manusi_box.jpg"
+  manusi_portar_img_path: string = "../../assets/saul_level/manusi_portar.jpg"
+  manusi_img_path: string = "../../assets/saul_level/manusi.jpg"
+  minge_baschet_img_path: string = "../../assets/saul_level/minge_baschet.jpg"
+  ochelari_ski_img_path: string = "../../assets/saul_level/ochelari_ski.jpg"
+  palete_ping_pong_img_path: string = "../../assets/saul_level/palete_ping_pong.jpg"
+
+
   constructor() { }
 
   ngOnInit(): void {
