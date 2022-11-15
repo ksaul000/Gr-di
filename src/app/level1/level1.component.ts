@@ -13,6 +13,9 @@ export class Level1Component implements OnInit {
   correct_answer_button2_visible: boolean = true;
   correct_answer_button3_visible: boolean = true;
   emote_image: string = "../../assets/curious_girl.jpg";
+  audio = new Audio;
+  happy_wav_path: string = "../../assets/yay_sound_effect.wav";
+  no_sound_effect: string = "../../assets/no_sound_effect.wav";
   constructor() { }
 
   ngOnInit(): void {
@@ -22,7 +25,10 @@ export class Level1Component implements OnInit {
     if(this.correct_answer_button1_visible){
       this.correct_answer_button1_visible=false;
       this.answer1_visible=true;
-      this.emote_image = "../../assets/happy_girl.jpg"
+      this.emote_image = "../../assets/happy_girl.jpg";
+      this.audio.src = this.happy_wav_path;
+      this.audio.load();
+      this.audio.play();
     }
   }
 
@@ -31,6 +37,9 @@ export class Level1Component implements OnInit {
       this.correct_answer_button2_visible=false;
       this.answer2_visible=true;
       this.emote_image = "../../assets/happy_girl.jpg"
+      this.audio.src = this.happy_wav_path;
+      this.audio.load();
+      this.audio.play();
     }
   }
 
@@ -39,11 +48,17 @@ export class Level1Component implements OnInit {
       this.correct_answer_button3_visible=false;
       this.answer3_visible=true;
       this.emote_image = "../../assets/happy_girl.jpg"
+      this.audio.src = this.happy_wav_path;
+      this.audio.load();
+      this.audio.play();
     }
   }
 
   clickOnWrongButton(): void{
       this.emote_image = "../../assets/upset_girl.jpg"
+      this.audio.src = this.  no_sound_effect;
+      this.audio.load();
+      this.audio.play();
   }
 
 }
