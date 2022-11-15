@@ -273,3 +273,48 @@
     font-size: 50px;
     color: black;
 }
+
+#my_video_1{
+    height: 80%;
+    width: 100%;
+}
+
+#my_instruction_video{
+    height: 80%;
+    width: 100%;
+}
+
+#feedback_div{
+    background-color: #e3c5cf;
+    height: 100%;
+    width: 100%;
+}
+
+#feedback_button_div{
+    height: 18%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex: content;
+}
+
+#retry_putton_div{
+    height: 100%;
+    width: 10%;
+    float: left;
+    margin-left: 30%;
+}
+
+#next_putton_div{
+    height: 100%;
+    width: 10%;
+    float: left;
+    margin-left: 5%;
+}
+
+#exit_button_div{
+    height: 100%;
+    width: 10%;
+    float: left;
+    margin-left: 5%;
+}

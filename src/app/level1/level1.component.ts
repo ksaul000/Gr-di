@@ -17,15 +17,19 @@ export class Level1Component implements OnInit {
   happy_wav_path: string = "../../assets/yay_sound_effect.wav";
   no_sound_effect: string = "../../assets/no_sound_effect.wav";
   //imagini butoane
-  bicicleta_img_path: string = "../../assets/saul_level/bicicleta.jpg"
-  casca_cotiere_genuchere_img_path: string = "../../assets/saul_level/casca_cotiere_genunchere.jpg"
-  ghete_de_iarna_img_path: string = "../../assets/saul_level/ghete_de_iarna.jpg"
-  manusi_box_img_path: string = "../../assets/saul_level/manusi_box.jpg"
-  manusi_portar_img_path: string = "../../assets/saul_level/manusi_portar.jpg"
-  manusi_img_path: string = "../../assets/saul_level/manusi.jpg"
-  minge_baschet_img_path: string = "../../assets/saul_level/minge_baschet.jpg"
-  ochelari_ski_img_path: string = "../../assets/saul_level/ochelari_ski.jpg"
-  palete_ping_pong_img_path: string = "../../assets/saul_level/palete_ping_pong.jpg"
+  poza_buton_1: string = "../../assets/saul_level/bicicleta.jpg"
+  poza_buton_2: string = "../../assets/saul_level/manusi_box.jpg"
+  poza_buton_3: string = "../../assets/saul_level/ghete_de_iarna.jpg"
+  poza_buton_4: string = "../../assets/saul_level/manusi_portar.jpg"
+  poza_buton_5: string =  "../../assets/saul_level/casca_cotiere_genuchere.jpg"
+  poza_buton_6: string = "../../assets/saul_level/paleta_ping_pong.jpg"
+  poza_buton_7: string = "../../assets/saul_level/minge_baschet.jpg"
+  poza_buton_8: string = "../../assets/saul_level/ochelari_ski.jpg"
+  poza_buton_9: string = "../../assets/saul_level/manusi.jpg"
+
+  show_level: boolean = true;
+  show_feedback: boolean = false;
+  show_instructions: boolean = true;
 
 
   constructor() { }
@@ -42,6 +46,10 @@ export class Level1Component implements OnInit {
       this.audio.load();
       this.audio.play();
     }
+    if(this.answer1_visible===true && this.answer2_visible===true && this.answer3_visible===true){
+      this.show_level=false;
+      this.show_feedback=true;
+    }
   }
 
   clickOnCorrectButton2(): void{
@@ -52,6 +60,10 @@ export class Level1Component implements OnInit {
       this.audio.src = this.happy_wav_path;
       this.audio.load();
       this.audio.play();
+    }
+    if(this.answer1_visible===true && this.answer2_visible===true && this.answer3_visible===true){
+      this.show_level=false;
+      this.show_feedback=true;
     }
   }
 
@@ -64,6 +76,10 @@ export class Level1Component implements OnInit {
       this.audio.load();
       this.audio.play();
     }
+    if(this.answer1_visible===true && this.answer2_visible===true && this.answer3_visible===true){
+      this.show_level=false;
+      this.show_feedback=true;
+    }
   }
 
   clickOnWrongButton(): void{
@@ -72,5 +88,21 @@ export class Level1Component implements OnInit {
       this.audio.load();
       this.audio.play();
   }
+
+  playVideo() {
+    var myVideo: any = document.getElementById("my_video_1");
+    myVideo.play();
+  }
+
+  enterTheLevel(){
+    this.show_instructions=false;
+    this.show_level=true;
+  }
+
+  playInstructionVideo(){
+    var myVideo: any = document.getElementById("my_instruction_video");
+    myVideo.play();
+  }
+
 
 }
