@@ -8,6 +8,8 @@ import { BingoComponent } from './bingo/bingo.component';
 import { AriciComponent } from './arici/arici.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { StartButtonComponent } from './start-button/start-button.component';
+import { Level1Component } from './level1/level1.component';
+import { SquareSelectButtonComponent } from './square-select-button/square-select-button.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { StartButtonComponent } from './start-button/start-button.component';
     TryComponent,
     SelectButtonComponent,
     BingoComponent,
-    StartButtonComponent
+    StartButtonComponent,
+    Level1Component,
+    SquareSelectButtonComponent
   ],
   imports: [
     BrowserModule
