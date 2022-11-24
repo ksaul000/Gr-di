@@ -12,7 +12,7 @@
             <app-select-button image_source="../../assets/next_arrow.png"></app-select-button>
         </div>
         <div id="exit_button_div">
-            <app-select-button image_source="../../assets/x.png"></app-select-button>
+            <app-select-button image_source="../../assets/x.png" (click)="exit()"></app-select-button>
         </div>
     </div>
 </div>
@@ -75,10 +75,10 @@
         </div>
         <div id="dedesupt_raft_div">
             <div class="interact_with_video_button">
-                <img src="../../assets/exit.png" alt="" class="interact_with_video_button_img">
+                <img src="../../assets/exit.png" alt="" class="interact_with_video_button_img" (click)="exit()">
             </div>
             <div class="interact_with_video_button">
-                <img src="../../assets/reload.png" alt="" class="interact_with_video_button_img">
+                <img src="../../assets/reload.png" alt="" class="interact_with_video_button_img" (click)="level_reload()">
             </div>
         </div>
         <div>
@@ -100,10 +100,10 @@
             <app-select-button image_source="../../assets/reload.png"></app-select-button>
         </div>
         <div id="next_putton_div">
-            <app-select-button image_source="../../assets/next_arrow.png"></app-select-button>
+            <app-select-button *ngIf="false" image_source="../../assets/next_arrow.png"></app-select-button>
         </div>
         <div id="exit_button_div">
-            <app-select-button image_source="../../assets/x.png"></app-select-button>
+            <app-select-button image_source="../../assets/x.png" (click)="exit()"></app-select-button>
         </div>
     </div>
 </div>

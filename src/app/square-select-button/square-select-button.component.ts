@@ -16,10 +16,10 @@ export class SquareSelectButtonComponent implements OnInit {
   }
 
   playSound() {
-    let audio = new Audio();
-    audio.src = this.audio_source;
-    audio.load();
-    audio.play();
+    //let audio = new Audio();
+    //audio.src = this.audio_source;
+    //audio.load();
+    //audio.play();
   }
 
 }

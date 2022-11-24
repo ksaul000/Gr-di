@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-level1',
@@ -27,9 +27,11 @@ export class Level1Component implements OnInit {
   poza_buton_8: string = "../../assets/saul_level/ochelari_ski.jpg"
   poza_buton_9: string = "../../assets/saul_level/manusi.jpg"
 
-  show_level: boolean = true;
+  show_level: boolean = false;
   show_feedback: boolean = false;
   show_instructions: boolean = true;
+
+  @Output() exitEventEmmiter = new EventEmitter();
 
 
   constructor() { }
@@ -102,6 +104,23 @@ export class Level1Component implements OnInit {
   playInstructionVideo(){
     var myVideo: any = document.getElementById("my_instruction_video");
     myVideo.play();
+  }
+
+  level_reload(){
+    this.answer1_visible = false;
+    this.answer2_visible = false;
+    this.answer3_visible = false;
+    this.correct_answer_button1_visible = true;
+    this.correct_answer_button2_visible = true;
+    this.correct_answer_button3_visible = true;
+    this.show_level = false;
+    this.show_feedback = false;
+    this.show_instructions = true;
+  }
+
+  exit(){
+    console.log("exit");
+    this.exitEventEmmiter.emit()
   }
 
 
