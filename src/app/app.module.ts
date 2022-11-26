@@ -10,6 +10,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { StartButtonComponent } from './start-button/start-button.component';
 import { Level1Component } from './level1/level1.component';
 import { SquareSelectButtonComponent } from './square-select-button/square-select-button.component';
+import { NivelIarna1Component } from './nivel-iarna1/nivel-iarna1.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SquareSelectButtonComponent } from './square-select-button/square-selec
     BingoComponent,
     StartButtonComponent,
     Level1Component,
-    SquareSelectButtonComponent
+    SquareSelectButtonComponent,
+    NivelIarna1Component
   ],
   imports: [
     BrowserModule

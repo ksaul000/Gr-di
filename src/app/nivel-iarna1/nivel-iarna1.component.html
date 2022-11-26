@@ -1,0 +1,109 @@
+<div *ngIf="show_instructions" (load)="playVideo()" id="feedback_div"> <!--Divul asta e pentru partea cu video-ul de inceput-->
+  <video autoplay id="my_instruction_video" class="video-js vjs-default-skin" width="640px" height="267px" controls preload="none"
+         poster=''
+         data-setup=''>
+    <source src="../../assets/saul_level/video2.mp4" type='video/mp4' /> <!--Aici se pune path-ul pentru primul video-->
+  </video>
+  <div id="feedback_button_div">
+    <div id="retry_putton_div" (click)="playInstructionVideo()">
+      <app-select-button image_source="../../assets/reload.png"></app-select-button>
+    </div>
+    <div id="next_putton_div" (click)="enterTheLevel()">
+      <app-select-button image_source="../../assets/next_arrow.png"></app-select-button>
+    </div>
+    <div id="exit_button_div">
+      <app-select-button image_source="../../assets/x.png" (click)="exit()"></app-select-button>
+    </div>
+  </div>
+</div>
+<div *ngIf="show_level" id="level_div"> <!--Divul asta e pentru nivelul propriu zis-->
+  <div id="animation_sevtion_div">
+    <div id="animation_div">
+      <img src={{emote_image}} alt="" id="sampleimg">
+    </div>
+    <div id="raspunsuri_titlu_div">
+      <p id="raspunsuri_titlu">Răspunsuri:</p>
+    </div>
+    <div id="right_responses_div">
+      <div id="right_response_1">
+        <img *ngIf="answer1_visible" src={{poza_buton_2}} alt="" class="right_response_img">
+      </div>
+      <div id="right_response_2">
+        <img *ngIf="answer2_visible" src={{poza_buton_4}} alt="" class="right_response_img">
+      </div>
+      <div id="right_response_3">
+        <img *ngIf="answer3_visible" src={{poza_buton_9}} alt="" class="right_response_img">
+      </div>
+    </div>
+  </div>
+  <div id="select_buttons_div">
+    <div id="deasupra_rafturilor_div">
+
+    </div>
+    <div id="raft1_div">
+      <div id="div_button1">
+        <app-square-select-button image_source={{poza_buton_1}} class="button1" (click)="clickOnWrongButton()"></app-square-select-button>
+      </div>
+      <div id="div_button2">
+        <app-square-select-button *ngIf="correct_answer_button1_visible" image_source={{poza_buton_2}} class="button1" (click)="clickOnCorrectButton1()"></app-square-select-button>
+      </div>
+      <div id="div_button3">
+        <app-square-select-button image_source={{poza_buton_3}} class="button1" (click)="clickOnWrongButton()"></app-square-select-button>
+      </div>
+    </div>
+    <div id="raft2_div">
+      <div id="div_button4">
+        <app-square-select-button *ngIf="correct_answer_button2_visible" image_source={{poza_buton_4}} class="button1" (click)="clickOnCorrectButton2()"></app-square-select-button>
+      </div>
+      <div id="div_button5">
+        <app-square-select-button   image_source={{poza_buton_5}} class="button1" (click)="clickOnWrongButton()"></app-square-select-button>
+      </div>
+      <div id="div_button6">
+        <app-square-select-button image_source={{poza_buton_6}} class="button1" (click)="clickOnWrongButton()"></app-square-select-button>
+      </div>
+    </div>
+    <div id="raft3_div">
+      <div id="div_button7">
+        <app-square-select-button image_source={{poza_buton_7}} class="button1" (click)="clickOnWrongButton()"></app-square-select-button>
+      </div>
+      <div id="div_button8">
+        <app-square-select-button image_source={{poza_buton_8}} class="button1" (click)="clickOnWrongButton()"></app-square-select-button>
+      </div>
+      <div id="div_button9">
+        <app-square-select-button  *ngIf="correct_answer_button3_visible" image_source={{poza_buton_9}} class="button1" (click)="clickOnCorrectButton3()"></app-square-select-button>
+      </div>
+    </div>
+    <div id="dedesupt_raft_div">
+      <div class="interact_with_video_button">
+        <img src="../../assets/exit.png" alt="" class="interact_with_video_button_img" (click)="exit()">
+      </div>
+      <div class="interact_with_video_button">
+        <img src="../../assets/reload.png" alt="" class="interact_with_video_button_img" (click)="level_reload()">
+      </div>
+    </div>
+    <div>
+      <p>.</p>
+    </div>
+    <div id="refturi_img_div">
+      <img src="../../assets/rafturi.jpg" alt="Rafturi" id="rafturi">
+    </div>
+  </div>
+</div>
+<div *ngIf="show_feedback" (load)="playVideo()" id="feedback_div"> <!--Divul asta e pentru feedback-->
+  <video autoplay id="my_video_1" class="video-js vjs-default-skin" width="640px" height="267px" controls preload="none"
+         poster=''
+         data-setup=''>
+    <source src="../../assets/saul_level/video1.mp4" type='video/mp4' /> <!--Aici se pune path-ul pentru al doilea video-->
+  </video>
+  <div id="feedback_button_div">
+    <div id="retry_putton_div" (click)="playVideo()">
+      <app-select-button image_source="../../assets/reload.png"></app-select-button>
+    </div>
+    <div id="next_putton_div">
+      <app-select-button *ngIf="false" image_source="../../assets/next_arrow.png"></app-select-button>
+    </div>
+    <div id="exit_button_div">
+      <app-select-button image_source="../../assets/x.png" (click)="exit()"></app-select-button>
+    </div>
+  </div>
+</div>
