@@ -11,6 +11,8 @@ import { StartButtonComponent } from './start-button/start-button.component';
 import { Level1Component } from './level1/level1.component';
 import { SquareSelectButtonComponent } from './square-select-button/square-select-button.component';
 import { NivelIarna1Component } from './nivel-iarna1/nivel-iarna1.component';
+import { NivelVara1Component } from './nivel-vara1/nivel-vara1.component';
+import { NivelVara2Component } from './nivel-vara2/nivel-vara2.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { NivelIarna1Component } from './nivel-iarna1/nivel-iarna1.component';
     StartButtonComponent,
     Level1Component,
     SquareSelectButtonComponent,
-    NivelIarna1Component
+    NivelIarna1Component,
+    NivelVara1Component,
+    NivelVara2Component
   ],
   imports: [
     BrowserModule
