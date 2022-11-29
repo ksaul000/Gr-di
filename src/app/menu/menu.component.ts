@@ -8,14 +8,13 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 export class MenuComponent implements OnInit {
 
   constructor() { }
-  @Output() exitEventEmmiter = new EventEmitter();
+  @Output() exitMenuEventEmmiter = new EventEmitter();
 
   ngOnInit(): void {
   }
 
   exit(){
-    console.log("exit");
-    this.exitEventEmmiter.emit()
+    this.exitMenuEventEmmiter.emit()
   }
 
 }

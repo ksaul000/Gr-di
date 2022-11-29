@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-homepage',
@@ -8,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class HomepageComponent implements OnInit {
 
   constructor() { }
+  @Output() enterInMenuEventEmmiter = new EventEmitter();
 
   ngOnInit(): void {
   }
 
+  clickOnPlayButton(){
+    this.enterInMenuEventEmmiter.emit();
+  }
 }
