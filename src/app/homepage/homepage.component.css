@@ -36,6 +36,7 @@
   font-weight: bold;
   font-family: 'Satisfy',cursive;
   color: #300842;
+  float: left;
 }
 
 #start_button_div{
@@ -57,4 +58,51 @@
   flex: 2;
 }
 
+#easter_egg_div{
+  background-color: red;
+  float: right;
+  height: 10%;
+  width: 100%;
 
+}
+
+#easter_egg_button{
+  height: 20%;
+}
+
+#exit_button_img{
+  background-color: #300842;
+  height: 100%;
+}
+
+#easter_egg_image{
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 50%;
+  border: black;
+  border: 5px solid #000000bd;
+  float: left;
+}
+
+#easter_egg_image:hover{
+  float: left;
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 50%;
+  border: 5px solid #000000bd;
+  transition: 300ms;
+  background-color: white;
+}
+
+#left_side{
+  width: 10%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
