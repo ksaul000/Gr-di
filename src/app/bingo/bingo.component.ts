@@ -20,8 +20,24 @@ export class BingoComponent implements OnInit {
   showLvlIarna1:boolean=false;
   showLvlIarna2:boolean=false;
 
+  audio = new Audio;
+  soundtrack:string="../../assets/zelda.wav";
+  popaudio = new Audio;
+  popsound:string="../../assets/pop.mp3";
+
+
   ngOnInit(): void {
+    this.audio.src=this.soundtrack;
+    this.audio.load();
+    this.audio.play();
+    this.popaudio.src=this.popsound;
+    this.popaudio.load();
   }
+
+  playSoundtrack(){
+
+  }
+
 
   sendLove(): void{
     if(!this.showLove){
@@ -30,6 +46,8 @@ export class BingoComponent implements OnInit {
   }
 
   switchToMenu(){
+    this.popaudio.play()
+    this.audio.play()
     this.showHomepage=false;
     this.showMenu=true;
     this.showLvlPrimavara1=false;
@@ -43,6 +61,7 @@ export class BingoComponent implements OnInit {
   }
 
   switchToHomepage(){
+    this.popaudio.play()
     this.showHomepage=true;
     this.showMenu=false;
     this.showLvlPrimavara1=false;
@@ -56,6 +75,8 @@ export class BingoComponent implements OnInit {
   }
 
   switchToLvl(lvl:string){
+    this.popaudio.play()
+    this.audio.pause()
     switch(lvl){
       case "primavara1": {
         this.showHomepage=false;

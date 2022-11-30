@@ -1,5 +1,14 @@
 <div id="background">
     <div id="bingo_div">
-        <app-nivel-primavara1></app-nivel-primavara1>
+        <app-homepage *ngIf="showHomepage" (enterInMenuEventEmmiter)="switchToMenu()"></app-homepage>
+        <app-menu *ngIf="showMenu" (exitMenuEventEmmiter)="switchToHomepage()" (enterInLvl)="switchToLvl($event)"></app-menu>
+        <app-nivel-primavara1 *ngIf="showLvlPrimavara1" (exitEventEmmiter)="switchToMenu()"></app-nivel-primavara1>
+        <app-nivel-primavara2 *ngIf="showLvlPrimavara2" (exitEventEmmiter)="switchToMenu()"></app-nivel-primavara2>
+        <app-nivel-vara1 *ngIf="showLvlVara2" (exitEventEmmiter)="switchToMenu()"></app-nivel-vara1>
+        <app-nivel-vara2 *ngIf="showLvlVara1" (exitEventEmmiter)="switchToMenu()"></app-nivel-vara2>
+        <app-nivel-toamna1 *ngIf="showLvlToamna1" (exitEventEmmiter)="switchToMenu()"></app-nivel-toamna1>
+        <app-nivel-toamna2 *ngIf="showLvlToamna2" (exitEventEmmiter)="switchToMenu()"></app-nivel-toamna2>
+        <app-nivel-iarna1 *ngIf="showLvlIarna1" (exitEventEmmiter)="switchToMenu()"></app-nivel-iarna1>
+        <app-nivel-iarna2 *ngIf="showLvlIarna2" (exitEventEmmiter)="switchToMenu()"></app-nivel-iarna2>
     </div>
 </div>

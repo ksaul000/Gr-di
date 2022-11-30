@@ -92,21 +92,32 @@ export class NivelPrimavara1Component implements OnInit {
   }
 
   playVideo() {
+    this.playPop();
     var myVideo: any = document.getElementById("my_video_1");
     myVideo.play();
   }
 
+  playPop(){
+    const popAudio = new Audio();
+    popAudio.src="../../assets/pop.mp3";
+    popAudio.load();
+    popAudio.play();
+  }
+
   enterTheLevel(){
+    this.playPop();
     this.show_instructions=false;
     this.show_level=true;
   }
 
   playInstructionVideo(){
+    this.playPop();
     var myVideo: any = document.getElementById("my_instruction_video");
     myVideo.play();
   }
 
   level_reload(){
+    this.playPop();
     this.answer1_visible = false;
     this.answer2_visible = false;
     this.answer3_visible = false;
