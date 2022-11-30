@@ -55,4 +55,115 @@ export class BingoComponent implements OnInit {
     this.showLvlIarna2=false;
   }
 
+  switchToLvl(lvl:string){
+    switch(lvl){
+      case "primavara1": {
+        this.showHomepage=false;
+        this.showMenu=false;
+        this.showLvlPrimavara1=true;
+        this.showLvlPrimavara2=false;
+        this.showLvlVara1=false;
+        this.showLvlVara2=false;
+        this.showLvlToamna1=false;
+        this.showLvlToamna2=false;
+        this.showLvlIarna1=false;
+        this.showLvlIarna2=false;
+        break;
+      }
+      case "primavara2": {
+        this.showHomepage=false;
+        this.showMenu=false;
+        this.showLvlPrimavara1=false;
+        this.showLvlPrimavara2=true;
+        this.showLvlVara1=false;
+        this.showLvlVara2=false;
+        this.showLvlToamna1=false;
+        this.showLvlToamna2=false;
+        this.showLvlIarna1=false;
+        this.showLvlIarna2=false;
+        break;
+      }
+      case "vara1": {
+        this.showHomepage=false;
+        this.showMenu=false;
+        this.showLvlPrimavara1=false;
+        this.showLvlPrimavara2=false;
+        this.showLvlVara1=true;
+        this.showLvlVara2=false;
+        this.showLvlToamna1=false;
+        this.showLvlToamna2=false;
+        this.showLvlIarna1=false;
+        this.showLvlIarna2=false;
+        break;
+      }
+      case "vara2": {
+        this.showHomepage=false;
+        this.showMenu=false;
+        this.showLvlPrimavara1=false;
+        this.showLvlPrimavara2=false;
+        this.showLvlVara1=false;
+        this.showLvlVara2=true;
+        this.showLvlToamna1=false;
+        this.showLvlToamna2=false;
+        this.showLvlIarna1=false;
+        this.showLvlIarna2=false;
+        break;
+      }
+      case "toamna1": {
+        this.showHomepage=false;
+        this.showMenu=false;
+        this.showLvlPrimavara1=false;
+        this.showLvlPrimavara2=false;
+        this.showLvlVara1=false;
+        this.showLvlVara2=false;
+        this.showLvlToamna1=true;
+        this.showLvlToamna2=false;
+        this.showLvlIarna1=false;
+        this.showLvlIarna2=false;
+        break;
+      }
+      case "toamna2": {
+        this.showHomepage=false;
+        this.showMenu=false;
+        this.showLvlPrimavara1=false;
+        this.showLvlPrimavara2=false;
+        this.showLvlVara1=false;
+        this.showLvlVara2=false;
+        this.showLvlToamna1=false;
+        this.showLvlToamna2=true;
+        this.showLvlIarna1=false;
+        this.showLvlIarna2=false;
+        break;
+      }
+      case "iarna1": {
+        this.showHomepage=false;
+        this.showMenu=false;
+        this.showLvlPrimavara1=false;
+        this.showLvlPrimavara2=false;
+        this.showLvlVara1=false;
+        this.showLvlVara2=false;
+        this.showLvlToamna1=false;
+        this.showLvlToamna2=false;
+        this.showLvlIarna1=true;
+        this.showLvlIarna2=false;
+        break;
+      }
+      case "iarna2": {
+        this.showHomepage=false;
+        this.showMenu=false;
+        this.showLvlPrimavara1=false;
+        this.showLvlPrimavara2=false;
+        this.showLvlVara1=false;
+        this.showLvlVara2=false;
+        this.showLvlToamna1=false;
+        this.showLvlToamna2=false;
+        this.showLvlIarna1=false;
+        this.showLvlIarna2=true;
+        break;
+      }
+
+    }
+
+  }
+
 }

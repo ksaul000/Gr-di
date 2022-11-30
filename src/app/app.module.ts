@@ -33,7 +33,7 @@ import { NivelToamna2Component } from './nivel-toamna2/nivel-toamna2.component';
     NivelVara1Component,
     NivelVara2Component,
     MenuComponent,
-    NivelIarna2Component
+    NivelIarna2Component,
     NivelToamna1Component,
     NivelToamna2Component
   ],
