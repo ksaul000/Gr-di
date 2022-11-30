@@ -14,6 +14,7 @@ import { NivelIarna1Component } from './nivel-iarna1/nivel-iarna1.component';
 import { NivelVara1Component } from './nivel-vara1/nivel-vara1.component';
 import { NivelVara2Component } from './nivel-vara2/nivel-vara2.component';
 import { MenuComponent } from './menu/menu.component';
+import { NivelIarna2Component } from './nivel-iarna2/nivel-iarna2.component';
 import { NivelToamna1Component } from './nivel-toamna1/nivel-toamna1.component';
 import { NivelToamna2Component } from './nivel-toamna2/nivel-toamna2.component';
 
@@ -32,6 +33,7 @@ import { NivelToamna2Component } from './nivel-toamna2/nivel-toamna2.component';
     NivelVara1Component,
     NivelVara2Component,
     MenuComponent,
+    NivelIarna2Component
     NivelToamna1Component,
     NivelToamna2Component
   ],
