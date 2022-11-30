@@ -14,6 +14,8 @@ import { NivelIarna1Component } from './nivel-iarna1/nivel-iarna1.component';
 import { NivelVara1Component } from './nivel-vara1/nivel-vara1.component';
 import { NivelVara2Component } from './nivel-vara2/nivel-vara2.component';
 import { MenuComponent } from './menu/menu.component';
+import { NivelToamna1Component } from './nivel-toamna1/nivel-toamna1.component';
+import { NivelToamna2Component } from './nivel-toamna2/nivel-toamna2.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { MenuComponent } from './menu/menu.component';
     NivelIarna1Component,
     NivelVara1Component,
     NivelVara2Component,
-    MenuComponent
+    MenuComponent,
+    NivelToamna1Component,
+    NivelToamna2Component
   ],
   imports: [
     BrowserModule
