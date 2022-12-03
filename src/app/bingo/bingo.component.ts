@@ -27,9 +27,9 @@ export class BingoComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.audio.src=this.soundtrack;
-    this.audio.load();
-    this.audio.play();
+    //this.audio.src=this.soundtrack;
+    //this.audio.load();
+    //this.audio.play();
     this.popaudio.src=this.popsound;
     this.popaudio.load();
   }
@@ -47,7 +47,7 @@ export class BingoComponent implements OnInit {
 
   switchToMenu(){
     this.popaudio.play()
-    this.audio.play()
+    //this.audio.play()
     this.showHomepage=false;
     this.showMenu=true;
     this.showLvlPrimavara1=false;
@@ -76,7 +76,7 @@ export class BingoComponent implements OnInit {
 
   switchToLvl(lvl:string){
     this.popaudio.play()
-    this.audio.pause()
+    //this.audio.pause()
     switch(lvl){
       case "primavara1": {
         this.showHomepage=false;
