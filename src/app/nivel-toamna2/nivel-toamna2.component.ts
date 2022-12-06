@@ -13,7 +13,7 @@ export class NivelToamna2Component implements OnInit {
   correct_answer_button1_visible: boolean = true;
   correct_answer_button2_visible: boolean = true;
   correct_answer_button3_visible: boolean = true;
-  emote_image: string = "../../assets/nivel_toamna2/inceput.png";
+  emote_image: string = "../../assets/nivel_toamna2/serioasa.jpg";
   audio = new Audio;
   happy_wav_path: string = "../../assets/yay_sound_effect.wav";
   no_sound_effect: string = "../../assets/no_sound_effect.wav";
@@ -44,7 +44,7 @@ export class NivelToamna2Component implements OnInit {
     if(this.correct_answer_button1_visible){
       this.correct_answer_button1_visible=false;
       this.answer1_visible=true;
-      this.emote_image = "../../assets/nivel_toamna2/happy.png";
+      this.emote_image = "../../assets/nivel_toamna2/fericita.jpg";
       this.audio.src = this.happy_wav_path;
       this.audio.load();
       this.audio.play();
@@ -59,7 +59,7 @@ export class NivelToamna2Component implements OnInit {
     if(this.correct_answer_button2_visible){
       this.correct_answer_button2_visible=false;
       this.answer2_visible=true;
-      this.emote_image = "../../assets/nivel_toamna2/happy.png"
+      this.emote_image = "../../assets/nivel_toamna2/fericita.jpg"
       this.audio.src = this.happy_wav_path;
       this.audio.load();
       this.audio.play();
@@ -74,7 +74,7 @@ export class NivelToamna2Component implements OnInit {
     if(this.correct_answer_button3_visible){
       this.correct_answer_button3_visible=false;
       this.answer3_visible=true;
-      this.emote_image = "../../assets/nivel_toamna2/happy.png"
+      this.emote_image = "../../assets/nivel_toamna2/fericita.jpg"
       this.audio.src = this.happy_wav_path;
       this.audio.load();
       this.audio.play();
@@ -86,7 +86,7 @@ export class NivelToamna2Component implements OnInit {
   }
 
   clickOnWrongButton(): void{
-    this.emote_image = "../../assets/nivel_toamna2/sad.png"
+    this.emote_image = "../../assets/nivel_toamna2/trista.jpg"
     this.audio.src = this.  no_sound_effect;
     this.audio.load();
     this.audio.play();
