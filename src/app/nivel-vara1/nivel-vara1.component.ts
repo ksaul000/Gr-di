@@ -56,7 +56,7 @@ export class NivelVara1Component implements OnInit {
     if(this.correct_answer_button2_visible){
       this.correct_answer_button2_visible=false;
       this.answer2_visible=true;
-      this.emote_image = "../../assets/nivel_vara/happy.jpg"
+      this.emote_image = "../../assets/nivel_vara2/happy.jpg"
       this.audio.src = this.happy_wav_path;
       this.audio.load();
       this.audio.play();
