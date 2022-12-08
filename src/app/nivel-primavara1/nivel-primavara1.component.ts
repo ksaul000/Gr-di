@@ -21,10 +21,10 @@ export class NivelPrimavara1Component implements OnInit {
   poza_buton_2: string = "../../assets/nivel_primavara1/bocanci.jpg"
   poza_buton_3: string = "../../assets/nivel_primavara1/pantaloni scurti.jpg"
   poza_buton_4: string = "../../assets/nivel_primavara1/bluza.jpg"
-  poza_buton_5: string = "../../assets/nivel_primavara1/geaca.jpg"
+  poza_buton_5: string = "../../assets/nivel_primavara1/geaca iarna.jpg"
   poza_buton_6: string = "../../assets/nivel_primavara1/pantaloni lungi.jpg"
   poza_buton_7: string = "../../assets/nivel_primavara1/papuci.jpg"
-  poza_buton_8: string = "../../assets/nivel_primavara1/tricou.jpg"
+  poza_buton_8: string = "../../assets/nivel_primavara1/maiou.jpg"
   poza_buton_9: string = "../../assets/nivel_primavara1/fular.jpg"
 
   show_level: boolean = false;

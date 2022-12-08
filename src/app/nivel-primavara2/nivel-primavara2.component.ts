@@ -18,14 +18,14 @@ export class NivelPrimavara2Component implements OnInit {
   no_sound_effect: string = "../../assets/no_sound_effect.wav";
   //imagini butoane
   poza_buton_1: string = "../../assets/nivel_primavara2/narcisa galbena.jpg"
-  poza_buton_2: string = "../../assets/nivel_primavara2/ghiocel alb.jpg"
-  poza_buton_3: string = "../../assets/nivel_primavara2/lalea galbena.jpg"
-  poza_buton_4: string = "../../assets/nivel_primavara2/brandusi roz.jpg"
+  poza_buton_2: string = "../../assets/nivel_primavara2/ghiocel alb1.jpg"
+  poza_buton_3: string = "../../assets/nivel_primavara2/zambila albastru.jpg"
+  poza_buton_4: string = "../../assets/nivel_primavara2/lalea alba.jpeg"
   poza_buton_5: string = "../../assets/nivel_primavara2/lalea rosie.jpg"
   poza_buton_6: string = "../../assets/nivel_primavara2/spanz rosu.jpg"
   poza_buton_7: string = "../../assets/nivel_primavara2/violeta violet.jpg"
   poza_buton_8: string = "../../assets/nivel_primavara2/papadie galbena.jpg"
-  poza_buton_9: string = "../../assets/nivel_primavara2/zambila albastru.jpg"
+  poza_buton_9: string = "../../assets/nivel_primavara2/liliac alb.jpg"
 
   show_level: boolean = false;
   show_feedback: boolean = false;
