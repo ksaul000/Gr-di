@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+    background-color: red;
+    background-image: url('images/black_background.jpg');
+    height: 95%;
+}
+
+body {
+    height: 95%;
+    max-width: 100%;
+    margin: 0 auto;
+    margin: 0px;
+}

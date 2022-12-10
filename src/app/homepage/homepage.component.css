@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+#homepage_div{
+  background: url("../../assets/fetita.png") no-repeat center center/cover;
+  background-size: cover;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  overflow: hidden;
+  border-radius: 5%;
+
+}
+#right_side{
+  display: flex;
+  flex-direction: column;
+}
+
+#title_div{
+  background: url("../../assets/blue2") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 25vh;
+  width: 900px;
+}
+
+#title{
+  margin-left: 10%;
+  font-size: 100px;
+  font-weight: bold;
+  font-family: 'Satisfy',cursive;
+  color: #300842;
+  float: left;
+}
+
+#start_button_div{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 75vh;
+  flex-basis: 100%;
+}
+
+#start_button_div div {
+  flex: 1;
+}
+#start_button_div button {
+  background-color: transparent;
+  border: none;
+  flex: 2;
+}
+
+#easter_egg_div{
+  background-color: red;
+  float: right;
+  height: 10%;
+  width: 100%;
+
+}
+
+#easter_egg_button{
+  height: 20%;
+}
+
+#exit_button_img{
+  background-color: #300842;
+  height: 100%;
+}
+
+#easter_egg_image{
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 50%;
+  border: black;
+  border: 5px solid #000000bd;
+  float: left;
+}
+
+#easter_egg_image:hover{
+  float: left;
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 50%;
+  border: 5px solid #000000bd;
+  transition: 300ms;
+  background-color: white;
+}
+
+#left_side{
+  width: 10%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}

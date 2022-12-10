@@ -1,0 +1,25 @@
+#arici_div{
+    background-color: 	#556B2F;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 300px;
+    border-radius: 5%;
+}
+
+#arici_img{
+    width: 300px;
+    height: 200px;
+}
+
+#hearth{
+    width: 100px;
+    height: 100px;
+    padding-left: 100px;
+}
+
+#send_love{
+    height: 50px;
+    background-color: rgb(243, 138, 138);
+}
