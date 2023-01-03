@@ -18,15 +18,15 @@ export class NivelToamna2Component implements OnInit {
   happy_wav_path: string = "../../assets/yay_sound_effect.wav";
   no_sound_effect: string = "../../assets/no_sound_effect.wav";
   //imagini butoane
-  poza_buton_1: string = "../../assets/nivel_toamna2/mamaruta.png"
-  poza_buton_2: string = "../../assets/nivel_toamna2/banana.png"
-  poza_buton_3: string = "../../assets/nivel_toamna2/masha.png"
-  poza_buton_4: string = "../../assets/nivel_toamna2/masina.png"
-  poza_buton_5: string =  "../../assets/nivel_toamna2/mini.png"
-  poza_buton_6: string = "../../assets/nivel_toamna2/struguri.png"
-  poza_buton_7: string = "../../assets/nivel_toamna2/capsuna.png"
-  poza_buton_8: string = "../../assets/nivel_toamna2/umbrela.png"
-  poza_buton_9: string = "../../assets/nivel_toamna2/urs.png"
+  poza_buton_1: string = "../../assets/nivel_toamna2/cifra1.jpg"
+  poza_buton_2: string = "../../assets/nivel_toamna2/cifra2.jpg"
+  poza_buton_3: string = "../../assets/nivel_toamna2/cifra3.jpg"
+  poza_buton_4: string = "../../assets/nivel_toamna2/cifra4.jpg"
+  poza_buton_5: string =  "../../assets/nivel_toamna2/cifra5.jpg"
+  poza_buton_6: string = "../../assets/nivel_toamna2/cifra6.jpg"
+  poza_buton_7: string = "../../assets/nivel_toamna2/cifra7.jpg"
+  poza_buton_8: string = "../../assets/nivel_toamna2/cifra8.jpg"
+  poza_buton_9: string = "../../assets/nivel_toamna2/cifra9.jpg"
 
   show_level: boolean = false;
   show_feedback: boolean = false;
@@ -92,22 +92,33 @@ export class NivelToamna2Component implements OnInit {
     this.audio.play();
   }
 
+  playPop(){
+    const popAudio = new Audio();
+    popAudio.src="../../assets/pop.mp3";
+    popAudio.load();
+    popAudio.play();
+  }
+
   playVideo() {
+    this.playPop();
     var myVideo: any = document.getElementById("my_video_1");
     myVideo.play();
   }
 
   enterTheLevel(){
+    this.playPop();
     this.show_instructions=false;
     this.show_level=true;
   }
 
   playInstructionVideo(){
+    this.playPop();
     var myVideo: any = document.getElementById("my_instruction_video");
     myVideo.play();
   }
 
   level_reload(){
+    this.playPop();
     this.answer1_visible = false;
     this.answer2_visible = false;
     this.answer3_visible = false;

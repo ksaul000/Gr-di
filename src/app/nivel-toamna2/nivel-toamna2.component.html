@@ -22,17 +22,11 @@
       <img src={{emote_image}} alt="" id="sampleimg">
     </div>
     <div id="raspunsuri_titlu_div">
-      <p id="raspunsuri_titlu">Răspunsuri:</p>
+      <p id="raspunsuri_titlu">Răspuns:</p>
     </div>
     <div id="right_responses_div">
-      <div id="right_response_1">
-        <img *ngIf="answer1_visible" src={{poza_buton_2}} alt="" class="right_response_img">
-      </div>
-      <div id="right_response_2">
-        <img *ngIf="answer2_visible" src={{poza_buton_6}} alt="" class="right_response_img">
-      </div>
       <div id="right_response_3">
-        <img *ngIf="answer3_visible" src={{poza_buton_7}} alt="" class="right_response_img">
+        <img *ngIf="answer3_visible" src={{poza_buton_8}} alt="" class="right_response_img">
       </div>
     </div>
   </div>
@@ -45,7 +39,7 @@
         <app-square-select-button image_source={{poza_buton_1}} class="button1" (click)="clickOnWrongButton()"></app-square-select-button>
       </div>
       <div id="div_button2">
-        <app-square-select-button *ngIf="correct_answer_button1_visible" image_source={{poza_buton_2}} class="button1" (click)="clickOnCorrectButton1()"></app-square-select-button>
+        <app-square-select-button image_source={{poza_buton_2}} class="button1" (click)="clickOnWrongButton()"></app-square-select-button>
       </div>
       <div id="div_button3">
         <app-square-select-button image_source={{poza_buton_3}} class="button1" (click)="clickOnWrongButton()"></app-square-select-button>
@@ -59,15 +53,15 @@
         <app-square-select-button image_source={{poza_buton_5}} class="button1" (click)="clickOnWrongButton()"></app-square-select-button>
       </div>
       <div id="div_button6">
-        <app-square-select-button  *ngIf="correct_answer_button2_visible" image_source={{poza_buton_6}} class="button1" (click)="clickOnCorrectButton2()"></app-square-select-button>
+        <app-square-select-button image_source={{poza_buton_6}} class="button1" (click)="clickOnWrongButton()"></app-square-select-button>
       </div>
     </div>
     <div id="raft3_div">
       <div id="div_button7">
-        <app-square-select-button  *ngIf="correct_answer_button3_visible" image_source={{poza_buton_7}} class="button1" (click)="clickOnCorrectButton3()"></app-square-select-button>
+        <app-square-select-button image_source={{poza_buton_7}} class="button1" (click)="clickOnWrongButton()"></app-square-select-button>
       </div>
       <div id="div_button8">
-        <app-square-select-button image_source={{poza_buton_8}} class="button1" (click)="clickOnWrongButton()"></app-square-select-button>
+        <app-square-select-button  *ngIf="correct_answer_button3_visible" image_source={{poza_buton_8}} class="button1" (click)="clickOnCorrectButton3()"></app-square-select-button>
       </div>
       <div id="div_button9">
         <app-square-select-button image_source={{poza_buton_9}} class="button1" (click)="clickOnWrongButton()"></app-square-select-button>
