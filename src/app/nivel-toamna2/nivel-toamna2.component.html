@@ -58,10 +58,10 @@
     </div>
     <div id="raft3_div">
       <div id="div_button7">
-        <app-square-select-button image_source={{poza_buton_7}} class="button1" (click)="clickOnWrongButton()"></app-square-select-button>
+        <app-square-select-button  *ngIf="correct_answer_button3_visible" image_source={{poza_buton_7}} class="button1" (click)="clickOnCorrectButton3()"></app-square-select-button>
       </div>
       <div id="div_button8">
-        <app-square-select-button  *ngIf="correct_answer_button3_visible" image_source={{poza_buton_8}} class="button1" (click)="clickOnCorrectButton3()"></app-square-select-button>
+        <app-square-select-button image_source={{poza_buton_8}} class="button1" (click)="clickOnWrongButton()"></app-square-select-button>
       </div>
       <div id="div_button9">
         <app-square-select-button image_source={{poza_buton_9}} class="button1" (click)="clickOnWrongButton()"></app-square-select-button>
