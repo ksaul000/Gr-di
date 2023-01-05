@@ -19,14 +19,14 @@ export class NivelToamna1Component implements OnInit {
   no_sound_effect: string = "../../assets/no_sound_effect.wav";
   //imagini butoane
   poza_buton_1: string = "../../assets/nivel_toamna1/adidasi.png"
-  poza_buton_2: string = "../../assets/nivel_toamna1/cizme.png"
-  poza_buton_3: string = "../../assets/nivel_toamna1/cizmebaieti.png"
-  poza_buton_4: string = "../../assets/nivel_toamna1/fusta.png"
+  poza_buton_2: string = "../../assets/nivel_toamna1/manusa.png"
+  poza_buton_3: string = "../../assets/nivel_toamna1/sandale.png"
+  poza_buton_4: string = "../../assets/nivel_toamna1/maiou.png"
   poza_buton_5: string =  "../../assets/nivel_toamna1/hanorac.png"
-  poza_buton_6: string = "../../assets/nivel_toamna1/sandale.png"
-  poza_buton_7: string = "../../assets/nivel_toamna1/pantaloniscurti.png"
+  poza_buton_6: string = "../../assets/nivel_toamna1/skiuri.png"
+  poza_buton_7: string = "../../assets/nivel_toamna1/geaca.png"
   poza_buton_8: string = "../../assets/nivel_toamna1/pantalonilungi.png"
-  poza_buton_9: string = "../../assets/nivel_toamna1/tricou.png"
+  poza_buton_9: string = "../../assets/nivel_toamna1/pantaloniscurti.png"
 
   show_level: boolean = false;
   show_feedback: boolean = false;
@@ -92,22 +92,33 @@ export class NivelToamna1Component implements OnInit {
     this.audio.play();
   }
 
+  playPop(){
+    const popAudio = new Audio();
+    popAudio.src="../../assets/pop.mp3";
+    popAudio.load();
+    popAudio.play();
+  }
+
   playVideo() {
+    this.playPop();
     var myVideo: any = document.getElementById("my_video_1");
     myVideo.play();
   }
 
   enterTheLevel(){
+    this.playPop();
     this.show_instructions=false;
     this.show_level=true;
   }
 
   playInstructionVideo(){
+    this.playPop();
     var myVideo: any = document.getElementById("my_instruction_video");
     myVideo.play();
   }
 
   level_reload(){
+    this.playPop();
     this.answer1_visible = false;
     this.answer2_visible = false;
     this.answer3_visible = false;

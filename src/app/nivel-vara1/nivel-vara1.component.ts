@@ -13,7 +13,7 @@ export class NivelVara1Component implements OnInit {
   correct_answer_button1_visible: boolean = true;
   correct_answer_button2_visible: boolean = true;
   correct_answer_button3_visible: boolean = true;
-  emote_image: string = "../../assets/nivel_iarna1/inceput.jpg";
+  emote_image: string = "../../assets/nivel_vara2/curious.jpg";
   audio = new Audio;
   happy_wav_path: string = "../../assets/yay_sound_effect.wav";
   no_sound_effect: string = "../../assets/no_sound_effect.wav";
@@ -41,7 +41,7 @@ export class NivelVara1Component implements OnInit {
     if(this.correct_answer_button1_visible){
       this.correct_answer_button1_visible=false;
       this.answer1_visible=true;
-      this.emote_image = "../../assets/nivel_iarna1/corect.jpg";
+      this.emote_image = "../../assets/nivel_vara2/happy.jpg";
       this.audio.src = this.happy_wav_path;
       this.audio.load();
       this.audio.play();
@@ -56,7 +56,7 @@ export class NivelVara1Component implements OnInit {
     if(this.correct_answer_button2_visible){
       this.correct_answer_button2_visible=false;
       this.answer2_visible=true;
-      this.emote_image = "../../assets/nivel_iarna1/corect.jpg"
+      this.emote_image = "../../assets/nivel_vara2/happy.jpg"
       this.audio.src = this.happy_wav_path;
       this.audio.load();
       this.audio.play();
@@ -69,28 +69,39 @@ export class NivelVara1Component implements OnInit {
 
 
   clickOnWrongButton(): void{
-    this.emote_image = "../../assets/nivel_iarna1/gresit.jpg"
+    this.emote_image = "../../assets/nivel_vara2/sad.jpg"
     this.audio.src = this.  no_sound_effect;
     this.audio.load();
     this.audio.play();
   }
 
+  playPop(){
+    const popAudio = new Audio();
+    popAudio.src="../../assets/pop.mp3";
+    popAudio.load();
+    popAudio.play();
+  }
+
   playVideo() {
+    this.playPop();
     var myVideo: any = document.getElementById("my_video_1");
     myVideo.play();
   }
 
   enterTheLevel(){
+    this.playPop();
     this.show_instructions=false;
     this.show_level=true;
   }
 
   playInstructionVideo(){
+    this.playPop();
     var myVideo: any = document.getElementById("my_instruction_video");
     myVideo.play();
   }
 
   level_reload(){
+    this.playPop();
     this.answer1_visible = false;
     this.answer2_visible = false;
     this.answer3_visible = false;
@@ -106,6 +117,5 @@ export class NivelVara1Component implements OnInit {
     console.log("exit");
     this.exitEventEmmiter.emit()
   }
-
 
 }
