@@ -87,8 +87,6 @@ export class NivelToamna2Component implements OnInit {
 
   level_reload(){
     this.playPop();
-    this.answer1_visible = false;
-    this.answer2_visible = false;
     this.answer3_visible = false;
     this.correct_answer_button3_visible = true;
     this.show_level = false;
