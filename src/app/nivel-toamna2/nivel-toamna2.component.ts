@@ -6,7 +6,8 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./nivel-toamna2.component.css']
 })
 export class NivelToamna2Component implements OnInit {
-
+  answer1_visible:boolean = false;
+  answer2_visible:boolean = false;
   answer3_visible: boolean = false;
   correct_answer_button3_visible: boolean = true;
   emote_image: string = "../../assets/nivel_toamna2/serioasa.png";
